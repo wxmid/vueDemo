@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hshshhs</h1>
+</body>
+</html>
+<script type="text/javascript">
+function ShapeBase() {
+  this.show = function()
+  {
+    alert("ShapeBase show")
+  }
+  this.init = function(){
+    alert("ShapeBase init")
+  }
+  console.log(111)
+};
+//
+/*
+function ShapeBase1() {
+  console.log('ShapeBase1')
+}
+
+ShapeBase1.prototype.show1=function()
+{
+  alert("ShapeBase show");
+}
+ShapeBase1.prototype.init1=function()
+{
+  alert("ShapeBase init");
+}
+*/
+function ShapeBase2() {
+  console.log('ShapeBase2')
+}
+
+ShapeBase2.prototype={
+  show2:function()
+  {
+    alert("ShapeBase show2");
+  },
+  init2:function() {
+    alert("ShapeBase init2");
+  }
+};
+function test(src){
+  var s=new ShapeBase2();
+  s.init2();
+  s.show2();
+}
+</script>
